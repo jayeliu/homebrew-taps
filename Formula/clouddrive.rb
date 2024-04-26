@@ -4,16 +4,16 @@
 class Clouddrive < Formula
   desc "CloudDrive is a powerful multi-cloud disk management tool that provides users with a one-stop multi-cloud disk solution that includes cloud disk local mount."
   homepage "https://www.clouddrive2.com/index.html"
-  url "https://github.com/jayeliu/homebrew-taps/blob/main/pkg/clouddrive-0.6.13.tar.gz"
-  sha256 "9e2c8ca719c4c6269ed38e015ef60c048c2b5353ae3e622e990510dbd70e0add"
-  license "None"
+  url "https://github.com/jayeliu/homebrew-taps/releases/download/0.6.13/clouddrive-0.6.13.tar.gz"
+  sha256 "360fb6cb612ee20a14b26f2b6b4f37b8a85aa0e603fa2d6b77f9a20c0befe193"
+  license ""
 
   # depends_on "cmake" => :build
 
   def install
     # Remove unrecognized options if they cause configure to fail
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", "--disable-silent-rules", *std_configure_args
+    # system "./configure", "--disable-silent-rules", *std_configure_args
     bin.install "clouddrive"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
   end
@@ -31,3 +31,4 @@ class Clouddrive < Formula
     system "false"
   end
 end
+
