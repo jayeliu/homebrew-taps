@@ -4,7 +4,7 @@
 class Clouddrive < Formula
   desc "CloudDrive is a powerful multi-cloud disk management tool that provides users with a one-stop multi-cloud disk solution that includes cloud disk local mount."
   homepage "https://www.clouddrive2.com/index.html"
-  url "https://github.com/jayeliu/homebrew-taps/blob/main/pkg/clouddrive-2-macos-aarch64-0.6.13.tgz"
+  url "https://github.com/jayeliu/homebrew-taps/blob/main/pkg/clouddrive-0.6.13.tar.gz"
   sha256 "ecb92fb09818d2350cdc883c7744a05cb7309ea55e55bd6fba99211c50f14fb5"
   license "None"
 
